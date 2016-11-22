@@ -2,3 +2,8 @@
 - name: Installing php compose
 command: php composer-setup.php --install-dir=/bin --filename=composer.phar
 
+# install neos
+- name: Insatlling neos
+php /path/to/composer.phar create-project --no-dev neos/neos-base-distribution .
+
+
