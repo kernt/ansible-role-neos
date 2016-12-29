@@ -17,4 +17,5 @@ galaxy_info:
     - deploy
     - CMS
     - PHP
-- Composer
+    - Composer
+    - neos
