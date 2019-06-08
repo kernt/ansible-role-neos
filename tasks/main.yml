@@ -1,11 +1,21 @@
+# ensure PHP versin 7.2 is installed
+ - name: ensure PHP 7.2 is installed
+   command: 'php --version | head -n 1 |cut -d" " -f 2'
+   register: installed_php_version
+   when: "installed_php_version.exits"
+   changed_when: {{ installed_php_version <= "5" }}
+   failed_when: False
+   tags: neos_php
+
 # Installs compose https://getcomposer.org/download/
 - name: Installing php compose
   command: php composer-setup.php --install-dir=/bin --filename=composer.phar
 
-# 
+# Installes neos
 - name: Installs Neos
   command: php /path/to/composer.phar create-project --no-dev neos/neos-base-distribution . 
-  
+
+# Starts neos. Schud be use systemd in a new Role version
 - name: Start Neos
   command: ./flow server:run
   register: init_neos_start
