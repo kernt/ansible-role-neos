@@ -5,12 +5,15 @@ galaxy_info:
   license: MIT
   min_ansible_version: 2.0
   platforms:
+  - name: CentOs
+    - 7
   - name: Ubuntu
     versions:
-    - all
+    - 18.04
   - name: Debian
     versions:
-    - all
+    - 9
+    - 10
 
   galaxy_tags:
     - deployment
