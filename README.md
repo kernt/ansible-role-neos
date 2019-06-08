@@ -1,11 +1,11 @@
 # README.md
 # Ansible Role: Neos
 
-An Ansible role that installs Neos CMS System
+An Ansible role that installs and configure Neos CMS System not more!
 
 ## Requirements
 
-If not Installed you need php cli .
+If not Installed you need php cli and a MySQL or MariaDB Server.
 
 ## Role Variables
 
