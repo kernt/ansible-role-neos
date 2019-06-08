@@ -1,3 +1,11 @@
 # Installs compose https://getcomposer.org/download/
 - name: Installing php compose
   command: php composer-setup.php --install-dir=/bin --filename=composer.phar
+
+# 
+- name: Installs Neos
+  command: php /path/to/composer.phar create-project --no-dev neos/neos-base-distribution . 
+  
+- name: Start Neos
+  command: ./flow server:run
+  register: init_neos_start
