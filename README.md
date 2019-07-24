@@ -3,6 +3,10 @@
 
 An Ansible role that installs and configure Neos CMS System not more!
 
+> This role not ready to use . It is just a first Idee. 
+> I didn't have technical details to fix some errors between Ansible and neos. 
+> If anyone have a idee than fiel free too inform me.
+
 ## Requirements
 
 If not Installed you need php cli and a MySQL or MariaDB Server.
