@@ -1,3 +1,13 @@
 ---
+neos_setup_url: "http://127.0.0.1:8081/setup"
+PHP_VERSION: "7.2"
+EXTERNAL_ROLE_PHP: "true"
+EXTERNAL_ROLE_PHP_NAME: ""
 
-neos_setup_page: "http://127.0.0.1:8081/setup"
+EXTERNAL_ROLE_COMPOSER: "true"
+EXTERNAL_ROLE_COMPOSER_NAME: ""
+
+INSTALL_METHOD: "" # Posibilieties are: "From scretch", "Boilerplate"
+NEOS_ENVIRONMENT: "Prod"
+NEOS_PROJECKTNAME_ "neos"
+NEOS_WORKING_DIR: "{{ ansibe_user }}/{{ NEO_PROJECKTNAME }}-{{ NEOS_ENVIRONMENT }}"
